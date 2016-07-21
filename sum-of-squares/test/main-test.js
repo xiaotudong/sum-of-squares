@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 describe('sumOfSquares',function () {
   describe('buildOddNUmbers',function () {
     const inputs = [1,2,3,4,5];
@@ -27,6 +28,7 @@ describe('sumOfSquares',function () {
       expect(sumOfSquares).toEqual(expectText);
     });
   });
+*/
 
   describe('buildOddNUmbers',function () {
     const inputs = [1,2,3,4,5];
@@ -37,4 +39,4 @@ describe('sumOfSquares',function () {
       expect(console.log).toHaveBeenCalledWith(expectText);
     });
   });
-});
+//});
