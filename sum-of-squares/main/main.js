@@ -9,14 +9,7 @@ function printQuadraticSum(inputs) {
 }
 
 function buildOddNumbers(inputs) {
-  const oddNumbers = [];
-
-  for (const input of inputs){
-    if(parseInt(input) % 2 != 0){
-      oddNumbers.push(input);
-    }
-  }
-  return oddNumbers;
+    return inputs.filter(input => input % 2 ===1);
 }
 
 function buildOddNumberSquares(oddNumbers) {
@@ -24,11 +17,8 @@ function buildOddNumberSquares(oddNumbers) {
 }
 
 function buildSumOfSquares(oddNumberSquares) {
-  let sumOfSquares = 0;
-
-  for (const oddNumberSquare of oddNumberSquares){
-    sumOfSquares += oddNumberSquare;
-  }
-  return sumOfSquares;
+  return oddNumberSquares.reduce((prv,next) => {
+    return prv + next;
+  })
 }
 
